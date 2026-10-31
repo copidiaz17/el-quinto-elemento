@@ -499,7 +499,7 @@ if (PREVIA) {
   document.body.insertAdjacentHTML('beforeend', `<div popover id="p-previa"><h3>Vista previa</h3>
     <p>Así se va a ver la página. La compra con QR se habilita cuando abra la venta.</p>
     <button class="cerrar" popovertarget="p-previa" popovertargetaction="hide">Entendido</button></div>
-    <p style="position:fixed;top:10px;left:10px;z-index:30;margin:0;font:800 10px var(--f);letter-spacing:.2em;color:#1a0f33;background:var(--quinto);padding:5px 10px;border-radius:99px;">VISTA PREVIA</p>`);
+    <p style="position:fixed;top:10px;right:10px;z-index:30;margin:0;font:800 10px var(--f);letter-spacing:.2em;color:#1a0f33;background:var(--quinto);padding:5px 10px;border-radius:99px;">VISTA PREVIA</p>`);
   $('#recuperar').hidden = true;
 }
 (PREVIA ? Promise.resolve(PREVIA) : fetch('/api/config').then(r => r.json())).then(c => {
